@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, body, footer {
+    max-width: 1040px;
+    margin: 0 auto;
+    font: 1.2rem;
+}
+
+body {
+    font-family: "Roboto", Arial, serif;
+    font: 1.2rem;
+}
+
+header {
+    background-color: #005583;
+    color: white;
+    text-align: center;   
+}
+
+h1 {
+    padding: 15px;
+    font-size: 23px;
+}
+
+#name {
+    color: yellow;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+}
+
+nav {
+    background-color: rgb(57, 58, 58);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #005583;
+    color: white;
+    text-align: center;   
+    padding: 20px;
+}
+
+.card {
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid rgb(194, 194, 194);
+    margin: 10px;
+}
+
+.card h2 {
+    background-color: #005583;
+    color: white;
+    text-align: center;  
+    border-radius: 15px 15px 0 0; 
+    padding: 10px;
+}
+
+.student {
+    align-content: center;
+}
+
+.student p{
+    padding: 40px 20px 20px 20px;
+}
+
+.student img {
+    grid-area: 3 / 1 / 4 / 2;
+    float: right;
+    padding: 20px;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: 275px 1fr ;
+    grid-template-rows: 1fr 220px;
+}
+
+.country h3 {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    margin: 0 15% 0 15%;
+}
+
+.country img {
+    grid-area: 2 / 1 / 3 / 2;
+    padding: 20px 0 0 20px;
+}
+
+.country p {
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 20px;
+}
+
+.resources {
+    padding: 50% 0 0 40px;  
+}
+
+.resources li {
+    padding: 2px;
+}
+
+#lastModified {color: yellow;}
+
+figure figcaption {
+    text-align: center;
+    color: rgb(79, 79, 79);
+    font-family: "Inria Sans", sans-serif;
+}
