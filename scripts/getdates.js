@@ -6,4 +6,4 @@ currentyear.innerHTML = `<span class="currentyear">${today.getFullYear()} </span
 // Get last modification date
 const lastModified = document.querySelector("#lastModified");
 const latestDate = new Date(document.lastModified);
-lastModified.innerHTML = `<p class="lastModified">Last Modified: ${latestDate} </p>`;
+lastModified.innerHTML = `<p class="lastModified">Last Modified: ${latestDate.getMonth()}/${latestDate.getDate()}/${latestDate.getFullYear()} ${latestDate.getHours()}:${latestDate.getMinutes()}:${latestDate.getSeconds()}</p>`;
