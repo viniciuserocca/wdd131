@@ -1,0 +1,39 @@
+@media screen and (min-width: 790px) {
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: 50px auto;
+        gap: 1rem; 
+    }
+
+    h2 {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    #menu {
+		display: none;
+	}
+
+	.navigation {
+        justify-content: flex-end;
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        background-color: #3B3355;
+        margin-top: 0;
+	}
+
+    .navigation a:hover {
+        background-color: #5D5D81;
+        color: #fff;
+    }
+}
