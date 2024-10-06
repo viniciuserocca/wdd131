@@ -1,0 +1,160 @@
+:root {
+    --green: #318120;
+    --yellow: #FEDD00;
+    --blue--opacity: rgba(1, 33, 105, .7);
+    --white--opacity: rgba(255, 255, 255, .6);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, serif;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--green);
+    color: #fff;
+    height: 8rem;
+    align-content: center;
+    text-align: center;
+}
+
+picture {
+    background-color: var(--green);
+}
+
+header {
+    border-bottom: 1rem solid var(--yellow);
+}
+
+h2 {
+    text-align: center;
+    align-content: center;
+}
+
+p {
+    margin: 5px;
+}
+
+.data {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    padding-top: 1rem;
+}
+
+.data h2 {
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: center;
+    justify-content: center;
+}
+
+.left-text-data {
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: right;
+}
+
+.right-text-data {
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: left;
+}
+
+.weather {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 200px 1fr;
+    padding: 1rem 0 2rem 0;
+}
+
+.weather h2 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.weather img{
+    grid-area: 2 / 1 / 3 / 3;
+    margin: 0 auto;
+}
+
+.left-text-weather {
+    grid-area: 3 / 1 / 4 / 2;
+    text-align: right;
+}
+
+.right-text-weather {
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: left;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 850px) {
+
+    .container {
+       display: flex;
+       flex-direction: column;
+    }
+
+    main {
+        position: relative;
+    }
+
+    section {
+        background-color: var(--white--opacity);
+        margin: 0;
+        text-align: center;
+    }
+
+    .data {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 150px 150px;
+        max-width: 300px;
+    }   
+
+    .data h2, .weather h2 {
+        background-color: var(--blue--opacity);
+        color: #fff;
+        text-align: left;
+        width: 90%;
+        margin-left: -1rem;
+        padding-left: 1.5rem;
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        padding-left: 2rem;
+    }
+
+    .weather img {
+        grid-area: 1 / 1 / 1 / 1;
+        visibility: hidden;
+    }
+
+    .left-text-weather {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    .right-text-weather {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
