@@ -1,0 +1,50 @@
+@media screen and (min-width: 790px) {
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+    main {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 1rem; 
+    }
+
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .temple-card {
+        width: 280px;
+        font-size: small;
+    }
+
+    h2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #menu {
+		display: none;
+	}
+
+	.navigation {
+        justify-content: flex-end;
+		flex-direction: row;
+        padding-top: 0;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        background-color: #3B3355;
+        margin-top: 0;
+	}
+
+    .navigation a:hover {
+        background-color: #5D5D81;
+        color: #fff;
+    }
+}
