@@ -28,6 +28,7 @@ main {
 
 h1 {
     text-align: left;
+    padding-top: 1rem;
 }
 
 h2 {
@@ -74,7 +75,7 @@ footer {
     border: 0;
 	color: #fff;
 	position: absolute;
-	top: 2.5rem;
+	top: 3rem;
 	right: 2rem;
 }
 
