@@ -41,40 +41,31 @@ home.addEventListener('click', () => {
 	home.classList.add('active');
 	h2.innerHTML = "Home";
 	createTempleCard(temples)
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
 });
 old.addEventListener('click', () => {
 	removeActive();
 	old.classList.add('active');
 	h2.innerHTML = "Old";
 	createTempleCard(temples.filter(temple => parseInt(temple.dedicated.slice(0, 4), 10) < 1900));
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
 });
 varNew.addEventListener('click', () => {
 	removeActive();
 	varNew.classList.add('active');
 	h2.innerHTML = "New";
 	createTempleCard(temples.filter(temple => parseInt(temple.dedicated.slice(0, 4), 10) > 2000));
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
 });
 large.addEventListener('click', () => {
 	removeActive();
 	large.classList.add('active');
 	h2.innerHTML = "Large";
 	createTempleCard(temples.filter(temple => temple.area > 90000));
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+
 });
 small.addEventListener('click', () => {
 	removeActive();
 	small.classList.add('active');
 	h2.innerHTML = "Small";
 	createTempleCard(temples.filter(temple => temple.area < 10000));
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
 });
 
 // Temples Array
