@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="WDD 131 Week 05 - Webpage with a form to send a review of a product">
+    <meta name="author" content="Vinicius Eduardo Rocca">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="reviewForm">
+
+            <fieldset>
+                <label for="selectProduct">Product Name<span> *</span></label>
+                <div class="field">
+                    <select name="product" id="selectProduct">
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label>Overall Rating<span> *</span></label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="instalattionDate">Date of Installation<span> *</span></label>
+                <div class="field">
+                    <input type="date" id="instalattionDate" name="instalattionDate" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label class="checkbox">Which features did you find useful in the product?<br><i>(Check all that apply)</i></label>
+                <div class="field">
+                    <label><input type="checkbox" id="durabillity" name="durabillity" value="yes">Durabillity</label>
+                    <label><input type="checkbox" id="use" name="use" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="written-review" class="texts">Written Review <span>(Optional)</span></label>
+                <div class="field">
+                    <textarea id="written-review" name="written-review" rows="10" cols="30"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="name" class="texts">Your Name <span>(Optional)</span></label>
+                <div class="field">
+                    <input type="text" id="name" name="fname">
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Send Review">
+    
+        </form>
+    </main>
+    <footer>
+        <p> &copy;<span id="currentyear"></span>|  Vinicius Eduardo Rocca  |  Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+:root {
+    --darker-blue: #023047;
+    --lighter-blue: #0703fa;
+    --yellow-color: #ffb703;
+    --white-color: #fff;
+    --darker-gray: #555;
+    --lighter-gray: #999;
+}
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+}
+
+body {
+    font-family: "Roboto", Arial, serif;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--darker-blue);
+    color: var(--white-color);
+    padding: 1rem;
+}
+
+main {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.review-container {
+    padding: 1rem 0 2rem 0;
+}
+
+.review-container img {
+    margin: 1rem;
+}
+
+.field { 
+    text-align: left;
+    padding: .5rem;
+}
+
+.reviewForm fieldset {
+    border: none;
+    padding-top: 1rem;
+}
+
+.reviewForm label{
+    display: block;
+    text-align: left;
+    padding-left: .5rem;
+}
+
+.reviewForm fieldset label span{
+    color: var(--lighter-blue);
+}
+
+.reviewForm .texts span {
+    color: var(--lighter-blue);
+    font-size: smaller;
+}
+
+.reviewForm .checkbox i {
+    font-size: smaller;
+}
+
+.reviewForm input[type="text"],
+.reviewForm input[type="date"],
+.reviewForm select,
+.reviewForm textarea
+{
+    background-color: var(--white-color);
+    display: block;
+    border: solid 1px var(--lighter-gray);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--darker-gray);
+    width: 100%;
+    max-width: 450px;
+    resize: none;
+}
+
+.reviewForm input[type="checkbox"]
+{
+    margin: 0 8px 8px 0;
+    width: 24px;
+    height: 24px;
+}
+
+.reviewForm input[type="submit"] {
+    border: none;
+    background-color: var(--darker-blue);
+    color: var(--white-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px var(--darker-gray);
+}
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+}
+
+.stars > label {
+	color: var(--yellow-color);
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars > label:hover {
+	color: #023047;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
