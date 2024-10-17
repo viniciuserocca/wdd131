@@ -87,6 +87,7 @@ main {
     width: 100%;
     max-width: 450px;
     resize: none;
+    appearance: none;
 }
 
 .reviewForm input[type="checkbox"]
