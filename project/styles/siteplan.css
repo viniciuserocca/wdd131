@@ -1,0 +1,47 @@
+:root {
+    --darker-blue: #23395B;
+    --blue-color: #406E8E;
+    --lighter-blue: #CBF7ED;
+    --white-color: #fff;
+}
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+}
+
+body {
+    font-family: "Roboto", Arial, serif;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--darker-blue);
+    padding: 2rem;
+    color: var(--white-color);
+}
+
+h2 {
+    color: var(--blue-color);
+}
+
+p, h3{
+    padding-top: 1rem;
+}
+
+.site-name, 
+.site-purpose, 
+.scenarios, 
+.color-schema, 
+.typography, 
+.wireframe {
+    padding-top: 2rem;
+    text-align: left;
+}
