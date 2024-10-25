@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Rocca | SAP SD Consultant</title>
+    <meta name="description" content="WDD 131 - Final Project: Portfolio webpage about my career as a SAP SD Consultant, this is the home page">
+    <meta name="author" content="Vinicius Eduardo Rocca">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script defer src="scripts/project.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Vinicius Rocca</h1>
+        <button id="menu" aria-label="Menu"></button>
+        <nav class="navigation">
+            <a href="project.html" title="Home" id="home" class="active">Home</a>
+            <a href="about.html" title="About" id="about">About</a>
+            <a href="contact.html" title="Contact" id="contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home-container">
+            <div class="scenario">
+                <h2>What is SAP?</h2>
+                <p>SAP, or "Systems, Applications, and Products in Data Processing," is a global leader in enterprise resource planning (ERP) software. Founded in 1972, SAP provides solutions for managing core business functions, such as finance, human resources, and supply chain operations. Its flagship product, S/4HANA, enables real-time data analysis and streamlines complex processes, improving efficiency and collaboration. SAP supports cloud, AI, and analytics, aiding digital transformation across various industries.</p>
+            </div>
+            <img src="images/sap-logo.webp" alt="SAP" width="300" height="148" loading="lazy">
+        </section>
+        <div class="bigger-line"></div>
+        <section class="home-container">
+            <div id="second">
+                <img src="images/sap.webp" alt="SAP Process" width="400" height="233" loading="lazy">
+            </div>
+            <div class="scenario">
+                <h2>What's inside the SD module in SAP?</h2>
+                <p>The SAP Sales and Distribution (SD) module is designed to manage sales processes and customer distribution. It includes functions for handling customer orders, pricing, billing, shipping, and delivery. Key components within SD are Sales Order Processing, Pricing Management, Billing and Invoicing, and Credit Management. It integrates seamlessly with other SAP modules, like MM (Materials Management) and FI (Financial Accounting), enhancing data flow and operational efficiency.</p>
+            </div>
+        </section>
+        <div class="bigger-line"></div>
+        <section class="sap-sd">
+            <h2>SAP Sales and Distribution Document Flow</h2>
+            <div class="sd-flow">
+                <figure><img src="images/order-icon.svg" alt="Order" width="75" height="75" loading="lazy"><figcaption>Order</figcaption></figure>
+                <div class="line"></div>
+                <figure><img src="images/delivery-icon.svg" alt="Delivery" width="75" height="75" loading="lazy"><figcaption>Delivery</figcaption></figure>
+                <div class="line"></div>
+                <figure><img src="images/invoice-icon.svg" alt="Invoice" width="75" height="75" loading="lazy"><figcaption>Invoice</figcaption></figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy;<span id="currentyear"></span>|  Vinicius Eduardo Rocca  |  Brazil</p>
+    </footer>
+</body>
+</html>

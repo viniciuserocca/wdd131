@@ -1,0 +1,318 @@
+:root {
+    --darker-blue: #12305c;
+    --blue-color: #085288;
+    --light-gray: #999;
+    --white-color: #fff;
+    --green-color: #008000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header, footer {
+    padding: 2rem;
+    background-color: var(--darker-blue);
+    color: var(--white-color);
+}
+
+header {
+    display: block;
+    margin-bottom: 5rem;
+}
+
+footer {
+    margin-top: 5rem;
+}
+
+header h1 {
+    text-align: left;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+    margin-top: .5rem;
+    margin-left: 0;
+	text-align: center;
+	text-decoration: none;
+	color: var(--white-color);
+}
+
+.navigation a:hover {
+	font-weight: 700;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+    border: 1px solid var(--white-color);
+}
+
+.navigation .active {
+    font-weight: 700;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+    border: 1px solid var(--white-color);
+}
+
+#menu {
+    font-size: 1.5rem;
+	background: none;
+    border: 0;
+	color: var(--white-color);
+	position: absolute;
+	top: 2.5rem;
+	right: 2rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.open a {
+	display: block;
+}
+
+main {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/*----------------- HOME ------------------*/
+
+.home-container img {
+    margin: 0 auto;
+    justify-items: center;
+}
+
+#second img {
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 2rem;
+}
+
+.scenario p{
+    padding: 1rem;
+    text-align: center;
+}
+
+.scenario h2 {
+    padding-bottom: .5rem;
+}
+
+.sd-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sd-flow figure{
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 25px;
+}
+
+.sap-sd {
+    padding-top: 2rem;
+}
+
+.sap-sd h2 {
+    padding-bottom: 1rem;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: var(--light-gray);
+}
+
+.bigger-line {
+    width: 75%;
+    height: 1px;
+    background-color: var(--light-gray);
+    margin: 2rem auto;
+}
+
+/*----------------- ABOUT ------------------*/
+
+.about-container {
+    display: block;
+    margin: 0 auto;
+}
+
+.about-container img {
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 2rem;
+}
+
+.about-container p {
+    text-align: center;
+    margin-left: 1.5rem;
+    align-content: center;
+}
+
+#about-container {
+    padding-bottom: 2rem;
+}
+
+/*----------------- CONTACT ------------------*/
+
+.contact-container {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.contact-container h2 {
+    padding-bottom: 2rem;
+}
+
+.contactForm fieldset {
+    border: none;
+    padding-top: 1rem;
+}
+
+.contactForm label{
+    display: block;
+    text-align: left;
+    padding-bottom: .5rem;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm select,
+.contactForm textarea
+{
+    background-color: var(--white-color);
+    display: block;
+    border: solid 1px var(--light-gray);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--light-gray);
+    width: 100%;
+    max-width: 450px;
+    resize: none;
+    appearance: none;
+}
+
+.contactForm input[type="submit"] {
+    border: none;
+    background-color: var(--darker-blue);
+    color: var(--white-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px var(--light-gray);
+}
+
+.contactForm input:required,
+.contactForm textarea:required,
+.contactForm select:required
+{
+    border-right: solid 12px var(--darker-blue);
+}
+
+.contactForm input:required:valid,
+.contactForm textarea:required:valid,
+.contactForm select:required:valid 
+{
+    border-right: solid 12px var(--green-color);
+}
+
+.redirect-container img {
+    margin: 1rem 0;
+}
+
+.countdown-container {
+    margin-top: 2rem;
+}
+
+/*----------------- MEDIA-QUERY ------------------*/
+
+@media screen and (min-width: 790px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #menu {
+		display: none;
+	}
+
+	.navigation {
+        justify-content: flex-end;
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        margin-top: 0;
+        margin-left: .5rem;
+	}
+
+    .home-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    /*----------------- HOME ------------------*/
+
+    .scenario {
+        padding: 1rem;
+        text-align: left;
+        align-content: center;
+    }
+
+    .scenario p {
+        text-align: left;
+    }
+
+    .scenario h2 {
+        padding-bottom: .5rem;
+        text-align: center;
+    }
+
+    #second img {
+        margin-bottom: 0;
+    }
+
+    /*----------------- ABOUT ------------------*/
+
+    .about-container {
+        display: flex;
+    }
+
+    .about-container img{
+        margin-bottom: 0;
+    }
+
+    .about-container p{
+        text-align: left;
+    }
+}

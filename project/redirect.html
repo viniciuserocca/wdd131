@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Rocca | Thank You</title>
+    <meta name="description" content="WDD 131 - Final Project: Portfolio webpage about my career as a SAP SD Consultant, this is the redirect page">
+    <meta name="author" content="Vinicius Eduardo Rocca">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script defer src="scripts/project.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Vinicius Rocca</h1>
+        <button id="menu" aria-label="Menu"></button>
+        <nav class="navigation">
+            <a href="project.html" title="Home" id="home">Home</a>
+            <a href="about.html" title="About" id="about">About</a>
+            <a href="contact.html" title="Contact" id="contact" class="active">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="redirect-container">
+            <h2>Your Message Has Been Sent!</h2>
+            <img src="images/success-icon.svg" alt="success-icon" width="150" height="150">
+            <p id="review-paragraph">I will get back to you ASAP!</p>
+            <br><br>
+            <p>You have sent <span id="counter"></span> messages in total</p>
+        </div>
+
+        <div class="countdown-container">
+            <h1>Redirecting in <span id="countdown">10</span> seconds...</h1>
+        </div>
+
+    </main>
+    <footer>
+        <p> &copy;<span id="currentyear"></span>|  Vinicius Eduardo Rocca  |  Brazil</p>
+    </footer>
+</body>
+</html>
